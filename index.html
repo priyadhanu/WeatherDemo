@@ -8,9 +8,7 @@
 <script src="jquery-2.1.1.min.js"></script>
 <script src="jquery.mobile-1.4.4.min.js"></script>
 <script src="http://maps.googleapis.com/maps/api/js?sensor=false&amp;libraries=places"	type="text/javascript"></script>
-	<script src="app.js"></script>
-	<script src="map.js"></script>
-	<script src="phonegap.js"></script>
+	
 	<link href='http://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet' type='text/css'>
 	<link href="style/style.css" type="text/css" rel="stylesheet" />
 	<link rel="stylesheet" href="css/bootstrap.min.css">
@@ -20,44 +18,47 @@
 
 <div data-role="page" id="main" data-title="weather_main">
 
-  <div data-role="header" data-position="inline">
-  <img class="myImage"src="metropoliaimage.jpg" alt="logo">
-  <select id="mySelect" data-native-menu="false" data-icon='gear'>
+	<div data-role="header" data-position="inline">
+		<img class="myImage"src="metropoliaimage.jpg" alt="logo">
+		<select id="mySelect" data-native-menu="false" data-icon='gear'>
             <option value='0' >About Weather App</option>
             <option value='1' selected="selected">Contact Us</option>
         </select>
-     <h1> WEATHER CHANNEL</h1>
+		<h1> WEATHER CHANNEL</h1>
       
-</div>
+	</div>
 		
- <div data-role="content" id="main_content">
-<!-- <button type="submit" class="mybtn" data-target="/Camera.html">Search</button>  -->
-<div data-role="main" class="ui-content" >
+	<div data-role="content" id="main_content">
+		<!-- <button type="submit" class="mybtn" data-target="/Camera.html">Search</button>  -->
+		<div data-role="main" class="ui-content" >
+			<p>To get the current Weather Update in your city...Enter the name of the City and click on Weather Update....</p>
 
-	<p>To get the current Weather Update in your city...Enter the name of the City and click on Weather Update....</p>
-
-	<input id="the-search-input" type="text" size="35" placeholder="Enter a location to retrieve weather details" autocomplete="on"> 
-	<input type="button" id="fetch"  data-inline="true" value="Weather Update" />
-</div>
+			<input id="the-search-input" type="text" size="35" placeholder="Enter a location to retrieve weather details" autocomplete="on"> 
+			<input type="button" id="fetch"  data-inline="true" value="Weather Update" />
+		</div>
 	
-	<div id="statusMsg"></div>
-	<div class="mapholder">
-	<div id="map-canvas"></div>
-	</div>
+		<div id="statusMsg"></div>
+		<div class="mapholder">
+			<div id="map-canvas"></div>
+		</div>
 	
-	<div id="container">
+		<div id="container">
+		</div>
 	</div>
-</div>
 	
 						
-<div data-role="footer" style="text-align:center;">
-    <div data-role="navbar">
-      <ul>
-        <li><a href="https://mail.google.com/" data-icon="mail">Mail</a></li>
-		 <li><a href="http://openweathermap.org/" data-icon="info">API</a></li>
-      </ul>
-	  </div>
-  </div>
-	</div>	 
-  <body>
+	<div data-role="footer" style="text-align:center;">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="https://mail.google.com/" data-icon="mail">Mail</a></li>
+				<li><a href="http://openweathermap.org/" data-icon="info">API</a></li>
+			</ul>
+		</div>
+	</div>
+</div>	 
+	<script src="phonegap.js"></script>
+	<script src="app.js"></script>
+	<script src="map.js"></script>
+	
+  </body>
 </html>
