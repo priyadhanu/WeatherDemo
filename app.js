@@ -3,7 +3,7 @@
 $(document).on('pageinit',function() {
 
 	$("#fetch").click(function(){
-	      playAudio();
+	      
 		var searchInput = $("#the-search-input").val();
 		
 		if(searchInput=="")
@@ -16,7 +16,7 @@ $(document).on('pageinit',function() {
 		
 			}
 			
-			
+			playAudio();
 		
 	});
 
