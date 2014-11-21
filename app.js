@@ -1,9 +1,9 @@
 
 
 $(document).on('pageinit',function() {
-	
+
 	$("#fetch").click(function(){
-	document.addEventListener("deviceready", onDeviceReady, false);
+	      playAudio();
 		var searchInput = $("#the-search-input").val();
 		
 		if(searchInput=="")
@@ -22,9 +22,11 @@ $(document).on('pageinit',function() {
 
 });
 
-function onDeviceReady() {
+
+
+/* function onDeviceReady() {
     playAudio();
-}
+} */
 
 function playAudio() {
     // Play the audio file at url

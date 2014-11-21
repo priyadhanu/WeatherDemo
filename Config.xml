@@ -4,7 +4,7 @@ xmlns:gap = "http://phonegap.com/ns/1.0"
 id = "fi.metropolia.priyadap.WeatherDemo"
 versionCode="1"
 version = "1.0.0">
-<name>lab1</name>
+<name>WeatherProject</name>
 <description>
 weather app
 </description>
