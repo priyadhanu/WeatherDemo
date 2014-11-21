@@ -22,13 +22,16 @@ alert("Device Ready!");
 
 function playAudio() {
     // Play the audio file at url
+	alert("Inside playAudio()!");
     var my_media = new Media('/android_asset/www/testaudio.mp3',
         // success callback
         function () {
+			alert("playAudio():Audio Success");
             console.log("playAudio():Audio Success");
         },
         // error callback
         function (err) {
+			alert("playAudio():Audio Error: " + err);
             console.log("playAudio():Audio Error: " + err);
         }
     );
