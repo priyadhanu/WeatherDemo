@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns = "http://www.w3.org/ns/widgets"
+xmlns:gap = "http://phonegap.com/ns/1.0"
+id = "fi.metropolia.priyadap.OpenWeather"
+versionCode="1"
+version = "1.0.0">
+<name>lab1</name>
+<description>
+weather app
+</description>
+<author href="http://users.metropolia.fi/~priyadap" email=”priyadarshini.pailaje@metropolia.fi">
+Priya
+</author>
+<icon src="icon.png" />
+<gap:plugin name="org.apache.cordova.media" version="0.2.8" />
+</widget>

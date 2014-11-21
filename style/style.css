@@ -1,0 +1,156 @@
+html,body
+{
+	margin:0;
+	padding:0;
+	font-family:arial;
+}
+p{
+font-weight: bold;
+font-size: 100%;
+color: white;
+}
+h1{
+margin:auto;
+max-width:100%;
+text-align:center;
+}
+#mySelect-button
+{
+float:right;
+}
+
+body
+{
+	background-color:#e1dad3;
+}
+
+.ui-page {
+    background : transparent url(http://www.nasa.gov/sites/default/files/bwhi1apicaaamlo.jpg_large.jpg) 0 0 repeat fixed;
+    background-size : cover;
+}
+
+/*.ui-mobile-viewport{
+    background: url("weather.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+.ui-page{
+    background:none;
+}
+.ui-overlay-a{
+    background:#d2d2d2;
+}
+.ui-page, .ui-content, .ui-btn {
+	background: transparent;
+}*/
+
+#container
+{
+	width:80%;
+	-moz-border-radius:15px;
+	-border-radius:15px;
+	-webkit-border-radius:15px;
+	background:white;
+	margin-left:10%;
+	margin-right:10%;
+	margin-top:2%;
+	padding:10px;
+}
+
+#statusMsg
+{
+	width:60%;
+	background:rgba(61, 148, 0, 0.6);
+	color:white;
+	margin-left:15%;
+	padding:10px;
+	font-family: 'Satisfy', cursive;
+	display:none;
+	font-size:1.2em;
+}
+
+#content
+{
+	background:black;
+	padding:5px;
+	font-size: 1.3em;
+}
+
+#location
+{
+	color:#4d90fe;
+	font-weight: bold;
+	font-size:1.5em;
+}
+
+#location1
+{
+	color:#4d90fe;
+	font-weight: bold;
+	font-size:1.5em;
+}
+.weatherData
+{
+	background:#66CCFF;
+	padding:5px;
+	margin-top:5px;
+}
+ 
+.dayHeader
+{
+	background:#CCFFE5;
+	padding:5px;
+	margin-top:5px;
+}
+
+ 
+.fiveweatherData
+{
+	margin-top:15px;
+}
+.myImage {
+     
+	  max-width:100%;
+	 display: block;
+     /*width: 400px;*/
+	  margin:auto;
+	  /* float:left;
+	  width:75px;
+    height:75px; */
+	float:left;
+}
+input
+{
+	padding:3px;
+	font-size:1em;
+	margin-left:5%;
+}
+
+
+
+input[type=button]
+{
+	margin-left:40px;
+}
+
+.mapholder
+{
+	padding:15px;	
+	margin-top:2%;
+	margin-left:10%;
+	margin-right:10%;
+	 width:80%;
+	-moz-border-radius:15px;
+	-border-radius:15px;
+	-webkit-border-radius:15px;
+	background:white;
+	
+}
+#map-canvas {
+    height:200px;
+    position:"absolute";
+    top: 0px;
+    left: 0px;
+    overflow:"hidden";
+    width:100%;
+	
+}
