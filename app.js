@@ -16,13 +16,13 @@ $(document).on('pageinit',function() {
 });
 
 function onDeviceReady() {
-alert("Device Ready!");
+//alert("Device Ready!");
     playAudio();
 }
 
 function playAudio() {
     // Play the audio file at url
-	alert("Inside playAudio()!");
+	//alert("Inside playAudio()!");
     var my_media = new Media('/android_asset/www/testaudio.mp3',
         // success callback
         function () {
