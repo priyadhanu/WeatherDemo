@@ -1,4 +1,4 @@
-
+document.addEventListener("deviceready", onDeviceReady, false);
 
 $(document).on('pageinit',function() {
 
@@ -6,27 +6,19 @@ $(document).on('pageinit',function() {
 	      
 		var searchInput = $("#the-search-input").val();
 		
-		if(searchInput=="")
-			{
+		if(searchInput==""){
 				alert("Please enter location");
-			}
-		else
-			{
+		}
+		else{
 			loadWeatherWebService(searchInput);
-		
-			}
-			
-			playAudio();
-		
+		}
 	});
-
 });
 
-
-
-/* function onDeviceReady() {
+function onDeviceReady() {
+alert("Device Ready!");
     playAudio();
-} */
+}
 
 function playAudio() {
     // Play the audio file at url
