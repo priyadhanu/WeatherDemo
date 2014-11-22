@@ -16,14 +16,15 @@ $(document).on('pageinit',function() {
 });
 
 function onDeviceReady() {
-	alert("Device Ready!");
-    //playAudio();
+	//alert("Device Ready!");
+	console.log("Device Ready!");
+    //playAudio('a.mp3');
 }
 
-function playAudio() {
+function playAudio(src) {
     // Play the audio file at url
 	//alert("Inside playAudio()!");
-    var my_media = new Media('/android_asset/www/a.mp3',
+    var my_media = new Media('/android_asset/www/'+src,
         // success callback
         function () {
 			//alert("playAudio():Audio Success");
@@ -80,14 +81,28 @@ function loadWeatherWebService(location)
 			//htmlString = htmlString + "<div id='location'>"+city +", "+ country+"<a href=media.html target=_blank ><img src=weather-icons/music.png alt=HTMLtutorial ></a></div>";
 			//htmlString = htmlString + "<div id='location'>"+city +", "+ country+" <img id="audioicon" src=weather-icons/music.png alt="audiologo"></div>";
 			htmlString = htmlString + "<div class='dayHeader'> <b>"+ formatteddate + " : "+ result.weather[0].main +"  <img src=weather-icons/"+icon+".png /></div>";
-			htmlString = htmlString + "<div class='weatherData'> <b> Temperature: Curr "+temp  + " <sup>o</sup>C , Max "+  Math.round(result.main.temp_max) + " <sup>o</sup>C , Min "+  Math.round(result.main.temp_min) + " <sup>o</sup>C </div>";
-			htmlString = htmlString + "<div class='weatherData'> <b> Sunrise: "+ sunriseFormattedTime+" AM , Sunset: "+ sunsetFormattedTime+" PM</div>";
-			htmlString = htmlString + "<div class='weatherData'> <b> Description: "+description.substring(0,1).toUpperCase() + description.substring(1)+" , Humidity: "+ humidity + " </div>";
+			htmlString = htmlString + "<div class='weatherData'> <b> Temp "+temp  + "<sup>o</sup>C (Max "+  Math.round(result.main.temp_max) + "<sup>o</sup>C, Min "+  Math.round(result.main.temp_min) + "<sup>o</sup>C) </div>";
+			htmlString = htmlString + "<div class='weatherData'> <b> Sunrise "+ sunriseFormattedTime+" AM, Sunset "+ sunsetFormattedTime+" PM</div>";
+			htmlString = htmlString + "<div class='weatherData'><b> "+description.substring(0,1).toUpperCase() + description.substring(1)+", Humidity "+ humidity + "%</div>";
 			
 			myurl="fiveday.html?city=" + city + "&country=" + country;
 			htmlString = htmlString + "<div class='fiveweatherData'> Do you want <a target=_fiveday_ href=" + myurl + "> 5 days weather</a> information? </div>";
 			$("#container").html(htmlString);
-			playAudio();
+			
+			myaudiosrc="clearsky.mp3";
+			if(icon.substring(2,1) == 'n'){
+				myaudiosrc="night.mp3";
+			}
+			else if(icon.substring(0,2) == "11"){
+				myaudiosrc="rain-thunder.mp3";
+			}
+			else if(icon.substring(0,2) == "09" || icon.substring(0,2) == "10"){
+				myaudiosrc="rain.mp3";
+			}
+			else if(icon.substring(0,2) == "13" || icon.substring(0,2) == "50"){
+				myaudiosrc="wind01.mp3";
+			}
+			playAudio(myaudiosrc);
 		}
 		else{
 			$("#container").html("No data found.. Please check the city name and try again..");

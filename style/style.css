@@ -45,13 +45,13 @@ body
 
 #container
 {
-	width:80%;
+	width:90%;
 	-moz-border-radius:15px;
 	-border-radius:15px;
 	-webkit-border-radius:15px;
 	background:white;
-	margin-left:10%;
-	margin-right:10%;
+	margin-left:5%;
+	margin-right:5%;
 	margin-top:2%;
 	padding:10px;
 }
