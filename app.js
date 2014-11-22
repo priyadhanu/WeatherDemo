@@ -90,6 +90,7 @@ function loadWeatherWebService(location)
 			$("#container").html(htmlString);
 			
 			myaudiosrc="clearsky.mp3";
+			alert("icon.substring(2,1)");
 			if(icon.substring(2,1) == "n"){
 				myaudiosrc="night.mp3";
 			}
