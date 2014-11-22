@@ -90,19 +90,20 @@ function loadWeatherWebService(location)
 			$("#container").html(htmlString);
 			
 			myaudiosrc="clearsky.mp3";
-			alert(icon.substring(2,1));
-			if(icon.substring(2,1) == "n"){
-				myaudiosrc="night.mp3";
-			}
-			else if(icon.substring(0,2) == "11"){
+			alert(icon.substring(2,2));
+			if(icon.substring(0,1) == "11"){
 				myaudiosrc="rain-thunder.mp3";
 			}
-			else if(icon.substring(0,2) == "09" || icon.substring(0,2) == "10"){
+			else if(icon.substring(0,1) == "09" || icon.substring(0,1) == "10"){
 				myaudiosrc="rain.mp3";
 			}
-			else if(icon.substring(0,2) == "13" || icon.substring(0,2) == "50"){
+			else if(icon.substring(0,1) == "13" || icon.substring(0,1) == "50"){
 				myaudiosrc="wind01.mp3";
 			}
+			else if(icon.substring(2,2) == "n"){
+				myaudiosrc="night.mp3";
+			}
+			
 			playAudio(myaudiosrc);
 		}
 		else{
