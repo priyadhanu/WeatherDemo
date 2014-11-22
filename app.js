@@ -89,19 +89,19 @@ function loadWeatherWebService(location)
 			htmlString = htmlString + "<div class='fiveweatherData'> Do you want <a target=_fiveday_ href=" + myurl + "> 5 days weather</a> information? </div>";
 			$("#container").html(htmlString);
 			
-			myaudiosrc="clearsky.mp3";
+			myaudiosrc="sound/clear.mp3";
 			//alert(icon.substring(2,3));
 			if(icon.substring(0,2) == "11"){
-				myaudiosrc="rain-thunder.mp3";
+				myaudiosrc="sound/thunder.mp3";
 			}
 			else if(icon.substring(0,2) == "09" || icon.substring(0,2) == "10"){
-				myaudiosrc="rain.mp3";
+				myaudiosrc="sound/r.mp3";
 			}
 			else if(icon.substring(0,2) == "13" || icon.substring(0,2) == "50"){
-				myaudiosrc="wind01.mp3";
+				myaudiosrc="sound/wind.mp3";
 			}
 			else if(icon.substring(2,3) == "n"){
-				myaudiosrc="night.mp3";
+				myaudiosrc="sound/n.mp3";
 			}
 			
 			playAudio(myaudiosrc);
