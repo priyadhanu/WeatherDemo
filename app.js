@@ -1,4 +1,4 @@
-document.addEventListener("deviceready", onDeviceReady, false);
+//document.addEventListener("deviceready", onDeviceReady, false);
 
 $(document).on('pageinit',function() {
 
