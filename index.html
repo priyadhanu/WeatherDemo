@@ -22,22 +22,26 @@
 		<!-- <img class="myImage"src="metropoliaimage.jpg" alt="logo"> -->
 		<select id="mySelect" data-native-menu="false" data-iconpos="notext" data-icon='gear'>
             <!-- <option value='0' >About App</option> -->
-			<option value='0' >Contact Us</option>
-			
-            <!-- <option value='1' selected="selected">Contact Us</option> -->
-			<!-- <option value='2'<a href="dialog.html" class="ui-shadow ui-btn ui-corner-all ui-btn-inline" data-transition="pop">Open dialog</a>dialogue message</option> -->
+			<!-- <option value='0' >About</option> -->
+            <option value='0'><a href="#" onclick="showAlert(); return false;">About</a></option>			
         </select>
 		<h1> WEATHER CHANNEL</h1>
-      
+            
 	</div>
 		
 	<div data-role="content" id="main_content">
 		<!-- <button type="submit" class="mybtn" data-target="/Camera.html">Search</button>  -->
 		<div data-role="main" class="ui-content" >
-			<p>To get the current Weather Update in your city...Enter the name of the City and click on Weather Update....</p>
+			<!-- <p>To get the current Weather Update in your city...Enter the name of the City and click on Weather Update....</p> -->
+			<p>Enter the location</p>
 
-			<input id="the-search-input" type="text" size="35" placeholder="Enter a location to retrieve weather details" autocomplete="on"> 
-			<input type="button" id="fetch"  data-inline="true" value="Weather Update" />
+		<input id="the-search-input" type="search" size="35" placeholder="Enter a location to retrieve weather details" autocomplete="on"> 
+		<!-- <input type="button" id="fetch"  data-inline="true" value="Weather Update" />  -->
+			<input type="button" id="fetch"  data-inline="true" value="Get Weather" > 
+		 <!--  <div data-inline="true">
+	      <input id="the-search-input" type="search" size="35" placeholder="Enter a location to retrieve weather details" autocomplete="on"> 
+	      <input type="button" id="fetch" value="Get Weather">
+          </div> -->
 		</div>
 	     
 		<div id="container">
@@ -60,8 +64,9 @@
 			</ul>
 		</div>
 	</div>
-</div>	 
-	<script src="phonegap.js"></script>
+</div>	
+
+    <script src="phonegap.js"></script>
 	<script src="app.js"></script>
 	<script src="map.js"></script>
 	

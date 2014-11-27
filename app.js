@@ -1,5 +1,5 @@
 //document.addEventListener("deviceready", onDeviceReady, false);
-
+//$.mobile.changePage( "dialog.html", { role: "dialog" } );
 $(document).on('pageinit',function() {
 
 	$("#fetch").click(function(){
@@ -14,6 +14,20 @@ $(document).on('pageinit',function() {
 		}
 	});
 });
+
+function showAlert() {
+        navigator.notification.alert(
+            'Created by Priya and Devika, Metropolia Univ., Finland.',  // message
+            alertDismissed,         // callback
+            'About Weather Project',            // title
+            'Done'                  // buttonName
+        );
+}
+// alert dialog dismissed
+    function alertDismissed() {
+        // do something
+    }
+
 
 function onDeviceReady() {
 	//alert("Device Ready!");
