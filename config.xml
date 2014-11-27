@@ -13,5 +13,5 @@ Priya
 </author>
 <icon src="icon.png" />
 <gap:plugin name="org.apache.cordova.media" version="0.2.8" />
-<gap:plugin name="org.apache.cordova.notification" version="0.2.8" />
+<gap:plugin name="org.apache.cordova.dialogs" version="0.2.10" />
 </widget>
