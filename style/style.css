@@ -4,16 +4,25 @@ html,body
 	padding:0;
 	font-family:arial;
 }
+
+.ui-header .ui-title
+{
+margin-left: auto; 
+margin-right: auto;
+}
+
 p{
 font-weight: bold;
 font-size: 100%;
 color: white;
 }
+
 h1{
 margin:auto;
 max-width:100%;
 text-align:center;
 }
+
 #mySelect-button
 {
 float:right;
@@ -116,7 +125,7 @@ body
 	  /* float:left;
 	  width:75px;
     height:75px; */
-	float:left;
+	/* float:left; */
 }
 input
 {
