@@ -20,18 +20,19 @@
 
 	<div data-role="header" data-position="inline" data-theme="a">
 		<!-- <img class="myImage"src="metropoliaimage.jpg" alt="logo"> -->
-		<select id="mySelect" data-native-menu="false" data-iconpos="notext" data-icon='gear'>
-            <!-- <option value='0' >About App</option> -->
-			<!-- <option value='0' >About</option> -->
-            <option value='0'><a href="#" onclick="showAlert(); return false;">About</a></option>			
-        </select>
+		<a href="#dialog" data-icon='gear' data-role="button">About</a>
+		<!-- <select id="mySelect" data-native-menu="false" data-iconpos="notext" data-icon='gear'>
+            <option value='0'><a href="#dialog" data-role="button">Open Dialog</a></option>			
+        </select> -->
+	
 		<h1> WEATHER CHANNEL</h1>
             
 	</div>
 		
 	<div data-role="content" id="main_content">
-		<!-- <button type="submit" class="mybtn" data-target="/Camera.html">Search</button>  -->
+			
 		<div data-role="main" class="ui-content" >
+		
 			<!-- <p>To get the current Weather Update in your city...Enter the name of the City and click on Weather Update....</p> -->
 			<p>Enter the location</p>
 
@@ -66,6 +67,21 @@
 	</div>
 </div>	
 
+
+<!--Dialog Page-->
+<div id="dialog" data-role="dialog">
+   <div data-role="header">
+       <h1>Weather Channel</h1>
+   </div>
+   <div data-role="content">
+        <p1>Authors: Priyadarshini Pailaje & Devika Ravi</p1><br>
+		<p2>Helsinki Metropolia University of Applied Sciences</p2>
+       <!-- <a href="#" data-role="button" data-rel="back" data-theme="b">Go Back</a> -->
+	</div>
+	<div data-role="footer" data-position="fixed">
+	   <h4>DREAMS DON'T WORK UNLESS YOU DO!!!</h4>
+	</div>
+</div>	
     <script src="phonegap.js"></script>
 	<script src="app.js"></script>
 	<script src="map.js"></script>

@@ -1,11 +1,12 @@
-
+$('form.ui-listview-filter').hide();
 $(document).on('pageinit',function(){
 
     $('.ui-btn-active').on('click', function(event) {
     event.preventDefault(); 
     var url = $(this).data('target');
     location.replace(url);
-});
+	
+	});
 	
 	var url = $(location).attr('href'); //get current url
 	var decodedUrl = decodeURIComponent(url);

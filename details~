@@ -1,2 +1,13 @@
 http://jsfiddle.net/fmJGR/- text and button on same line
+------------------------------------------------------
+http://jsfiddle.net/aVkgp/ - header and drop down menu
+--------------------------------------------------------
+option select:
+<select name="forma" onchange="location = this.options[this.selectedIndex].value;">
+ <option value="Home.php">Home</option>
+ <option value="Contact.php">Contact</option>
+ <option value="Sitemap.php">Sitemap</option>
+</select>
+-------------------------------------------------------
+dialog- https://www.youtube.com/watch?v=x_xikeTu4YQ
 
