@@ -81,7 +81,7 @@ function loadWeatherWebService(location)
 			var month = months[newdate.getMonth()];
 			var date = newdate.getDate();
 			var timezone = newdate.getUTCHours();//TimezoneOffset();
-			alert(newdate);
+			//alert(newdate);
 			var formatteddate = weekday[newdate.getDay()] + ' ' + date + ' ' + month + ', ' + year;
 			var icon = result.weather[0].icon;
 			htmlString = htmlString + "<div id='location'>"+city +", "+ country+"</div>";
