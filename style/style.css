@@ -24,6 +24,7 @@ text-align:center;
 p2{
 font-weight: bold;
 }
+
 h1{
 margin:auto;
 max-width:100%;
@@ -150,7 +151,7 @@ input[type=button]
 	margin-top:2%;
 	margin-left:10%;
 	margin-right:10%;
-	 width:80%;
+	width:80%;
 	-moz-border-radius:15px;
 	-border-radius:15px;
 	-webkit-border-radius:15px;
