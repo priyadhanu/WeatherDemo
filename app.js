@@ -65,9 +65,11 @@ function loadWeatherWebService(location)
 			var sunrise = new Date((result.sys.sunrise)*1000);
 			var sunriseHours = sunrise.getHours();
 			var sunriseMinutes = sunrise.getMinutes();
+			
 			var sunset = new Date((result.sys.sunset)*1000);
 			var sunsetHours = sunset.getHours();
 			var sunsetMinutes = sunset.getMinutes();
+			
 			// will display time in 10:30:23 format
 			var sunriseFormattedTime = sunriseHours + ':' + sunriseMinutes;
 			var sunsetFormattedTime = (sunsetHours-12) + ':' + sunsetMinutes;
@@ -78,6 +80,8 @@ function loadWeatherWebService(location)
 			var year = newdate.getFullYear();
 			var month = months[newdate.getMonth()];
 			var date = newdate.getDate();
+			var timezone = newdate.getUTCHours();//TimezoneOffset();
+			alert(newdate);
 			var formatteddate = weekday[newdate.getDay()] + ' ' + date + ' ' + month + ', ' + year;
 			var icon = result.weather[0].icon;
 			htmlString = htmlString + "<div id='location'>"+city +", "+ country+"</div>";
