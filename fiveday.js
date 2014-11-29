@@ -8,6 +8,10 @@ $(document).on('pageinit',function(){
 	
 	});
 	
+	 $('.refresh').on('click',function(event){
+     location.reload();
+     });
+	
 	var url = $(location).attr('href'); //get current url
 	var decodedUrl = decodeURIComponent(url);
 	//$("#container").html("URL:" + url);
